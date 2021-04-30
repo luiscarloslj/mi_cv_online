@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.flex-container {
+    background: linear-gradient(0deg, black, gray, rgb(204, 204, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+h1 {
+    font-family: 'Bangers', 'arial';
+    font-size: 5vw;
+}
