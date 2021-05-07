@@ -4,7 +4,6 @@
 }
 .flex-container {
     background: linear-gradient(0deg, black, gray, rgb(204, 204, 255));
-    /* display: flex; */
     flex-direction:column;
     justify-content: center;
     width: 100vw;
@@ -17,19 +16,19 @@ div h1 {
     padding-top: 15%;
     text-align: center;
 }
-div nav ul {
+nav ul {
   list-style: none;
   text-align: center;
   margin: 0;
   padding: 0;
   }
 
-nav ul li {
+ul li {
   display: inline-block;
   background-color: yellow;
   
 }
-nav ul li a {
+li a {
   text-decoration: none;
   width: 200px;
   display: block; 
