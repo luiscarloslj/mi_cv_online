@@ -4,15 +4,38 @@
 }
 .flex-container {
     background: linear-gradient(0deg, black, gray, rgb(204, 204, 255));
-    display: flex;
+    /* display: flex; */
+    flex-direction:column;
     justify-content: center;
-    align-items:center;
     width: 100vw;
     height: 100vh;
+    
 }
 div h1 {
     font-family: 'Bangers', 'arial';
     font-size: 350%;
+    padding-top: 15%;
+    text-align: center;
+}
+div nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  }
+
+nav ul li {
+  display: inline-block;
+  background-color: yellow;
+  
+}
+nav ul li a {
+  text-decoration: none;
+  width: 200px;
+  display: block; 
+  padding: 15px;
+  font-family: 'Bangers', 'arial';
+  font-size: 100%;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
