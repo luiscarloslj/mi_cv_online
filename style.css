@@ -21,11 +21,12 @@ nav ul {
   text-align: center;
   margin: 0;
   padding: 0;
+  background-color: #ffff00;
   }
 
 ul li {
   display: inline-block;
-  background-color: yellow;
+  background-color: #ffff00;
   
 }
 li a {
@@ -35,6 +36,7 @@ li a {
   padding: 15px;
   font-family: 'Bangers', 'arial';
   font-size: 100%;
+  color: #000;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
