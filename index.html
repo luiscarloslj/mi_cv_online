@@ -1,25 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <title>C V</title>
-</head>
-<body>
-    <div class="flex-container">
-        <nav>
-        <ul>
-            <li><a href="#">Sobre mi</a></li>
-            <li><a href="#">Conocimientos de Programacion</a></li>
-            <li><a href="#">Certificados</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <div id="nombre"><h1>LUIS CARLOS LOPEZ JUAREZ</h1></div>
+  </head>
+  <body>
+    <div class="content-container">
+      <header>
+        <div id="nombre"><h1>LUIS CARLOS LOPEZ JUAREZ</h1></div>
+        <h2>Perfil</h2>
+        <p>
+          Desarrollador Junior, Pais: Guatemala, Estudios: Cursando Ingenieria
+          en Sistemas, Edad: 36 años
+        </p>
+        <nav class="nav">
+          <ul>
+            <li><a href="https://github.com/luiscarloslj">Perfil de Github</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            
+          </ul>
+        </nav>
+      </header>
+      <div class="container"></div>
+      <div class="primer-flex">
+
+        <section class="sections" id="acerca-de-mi">
+            <h2>Acerca de Mi</h2>
+          <p>Desde hace varios años realice paginas web principalmente en html, css y javascript de las cuales no guarde record, hace un año retome la programacion y el diseño de paginas web, comence realizando cursos y seguidamente en la universidad. Mi ultimo empleo no fue relacionado a la programacion, trabaje como representante al cliente un un centro de llamdas en idioma ingles, por medio de telefono he prestado servicio al cliente en soporte tecnico de internet entre otras funciones</p>
+        </section>
+
+        <section class="sections">
+            <h2>Idiomas</h2>
+          <ul>
+              <li>Español Nativo</li>
+              <li>Ingles 80%</li>
+          </ul>
+        </section>
+
+        <section class="sections" id="habilidades-tecnicas">
+          <h2>Habilidades Tecnicas</h2>
+          <ul>
+            <li>
+              <div> <img src="html-5.svg" width="12px" />  Html </div><meter min="0" max="100" low="25" high="75" optimum="100" value="100">
+            </li>
+            <li><div> <img src="css-3.svg" width="12px" />  Css </div><meter min="0" max="100" low="25" high="75" optimum="100" value="100"></li>
+            <li><div> <img src="javascript.svg" width="12px" />  Javascript </div><meter min="0" max="100" low="25" high="75" optimum="100" value="75"></li>
+            <li><div> <img src="atom.svg" width="12px" />  React </div><meter min="0" max="100" low="25" high="75" optimum="100" value="60"></li>
+            <li><div> <img src="php.svg" width="12px" />  php </div><meter min="0" max="100" low="25" high="75" optimum="100" value="60"></li>
+            <li><div> <img src="piton.svg" width="12px" />  Python </div><meter min="0" max="100" low="25" high="75" optimum="100" value="75"></li>
+          </ul>
+        </section>
+        
+
+
+        <section class="sections">
+            <h2>Otras Habilidades</h2>
+          <ul>
+              <li>Trabajo en Equipo</li>
+              <li>Puntualidad</li>
+              <li>Resolucion de conflictos</li>
+              <li>Comunicacion</li>
+          </ul>
+        </section>
+
+        <section class="sections" id="certificados">
+            <h2>Certificados</h2>
+            <h3>Coursera</h3>
+            <ul><li>HTML, CSS, and Javascript for Web Developers, Johns Hopkins University <a href="https://www.coursera.org/verify/XPS8K2BYSJDG" target="_blank">Link</a></li></ul>
+            <ul><li>Interactivity with JavaScript, University of Michigan <a href="https://www.coursera.org/verify/LB4CHSWN4KWF" target="_blank">Link</a></li></ul>
+            <ul><li>Front-End Web Development with React, The Hong Kong University of Science and Technology <a href="https://www.coursera.org/verify/TEDZJHEJDRPY" target="_blank">Link</a></li></ul>
+            <ul><li>Building Database Application in PHP, University of Michigan <a href="https://www.coursera.org/verify/ZCSX7F7CQK3E" target="_blank">Link</a></li></ul>
+            <ul><li>Capstone Retrieving Processing and Visualizing Data with Python, University of Michigan <a href="https://www.coursera.org/verify/LRZT9HTLRC83" target="_blank">Link</a></li></ul>
+          </section>        
+          
+
+
+
+      </div>
+      <div class="segundo-flex">
+
+        <div class="wrapper">
+            <div class="title" id="contacto"><h1>CONTACTAME</h1>
+            </div>
+            <body class="contactBody">
+           
+            <form action="enviar.php" method="post" class="form_contact">
+            <input type="text" class="name entry " name="nombre" placeholder="Tu nombre" required/>
+           
+            <input type="text" class="email entry" name="correo" placeholder="Email" required/>
+           
+            <textarea class="message entry" placeholder="mensaje" required></textarea>
+           
+            <button class="submit entry" onclick="Gracias()">Enviar</button>
+            </form>
+            <div class="shadow"></div>
+            </div>
+        
+
     </div>
-</body>
+    </div>
+  </body>
 </html>
